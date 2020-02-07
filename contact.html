@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto ASIS</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/ba2dbb47bb.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <div class="container-contact">
+        <div class="wrap-contact">
+            <form class="contact-form validate-form" name="contact-form">
+                <span class="contact-form-title">Contacto</span>
+                <div class="wrap-input validate-input" data-validate="Nombre Requerido">
+                    <span class="label-input" for="name">Nombre </span>
+                    <input type="text" id="name" class="inputTxt" name="name" placeholder="Ingresa tu Nombre" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Apellido paterno Requerido">
+                    <span class="label-input" for="firstName">Apellido Paterno </span>
+                    <input type="text" id="firstName" class="inputTxt" name="firstName"
+                        placeholder="Ingresa tu Apellido Paterno" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Apellido materno Requerido">
+                    <span class="label-input" for="secondName">Apellido Materno </span class="label-input">
+                    <input type="text" id="secondName" class="inputTxt" name="secondName"
+                        placeholder="Ingresa tu Apellido Materno" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Empresa Requerido">
+                    <span class="label-input" for="company">Empresa </span>
+                    <input type="text" id="company" class="inputTxt" name="company" placeholder="Ingresa tu Empresa" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Posicion Requerido">
+                    <span class="label-input" for="position">Posicion </span>
+                    <input type="text" id="position" class="inputTxt" class="inputTxt" name="position"
+                        placeholder="Ingresa tu Posicion" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Correo Electronico Requerido">
+                    <span class="label-input" for="email">Correo Electronico </span>
+                    <input type="email" id="email" class="inputTxt" name="email" placeholder="Ingresa tu correo" />
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Telefono Requerido">
+                    <span class="label-input" for="tel">Telefono (whatsapp, telegram) </span class="label-input">
+                    <input type="tel" id="tel" name="tel" class="inputTxt" placeholder="Ingresa tu Telefono" />
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="header" data-validate="Selecciona uno">Eres Socio ASIS?</div>
+                <ul>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" id="y-option" class="required" name="selector">
+                            <label for="y-option" class="radio-label">Si</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" id="n-option" name="selector">
+                            <label for="n-option" class="radio-label">No</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio">
+                            <input type="radio" id="o-option" name="selector">
+                            <label for="o-option" class="radio-label">Otro Capitulo</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="header" data-validate="Slecciona por lo menos una opcion">Quiero Informacion de </div>
+                <ul>
+                    <li>
+                        <div class="check">
+                            <input type="checkbox" id="a-option" name="info-selector">
+                            <label for="a-option" class="check-label">Diplomado y Programa CPP</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <input type="checkbox" id="b-option" name="info-selector">
+                            <label for="b-option" class="check-label">Fundamentos basicos para la gestion de proyectos de seguridad</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <input type="checkbox" id="c-option" name="info-selector">
+                            <label for="c-option" class="check-label">Desayuno ASIS Puebla</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <input type="checkbox" id="d-option" name="info-selector">
+                            <label for="d-option" class="check-label">Membresia ASIS Puebla</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check">
+                            <input type="checkbox" id="e-option" name="info-selector">
+                            <label for="e-option" class="check-label">Patrocinio de eventos</label>
+                        </div>
+                    </li>
+                </ul>
+                <button class="submit-cta">Enviar</button>
+            </form>
+        </div>
+    </div>    
+</body>
+
+</html>
